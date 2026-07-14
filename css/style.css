@@ -1,0 +1,20 @@
+.header {
+  border: 1px solid lightgrey;
+}
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header__heart {
+  height: 3vw;
+  padding: 20px;
+  border-right: 1px solid lightgrey;
+}
+.header__logo {
+  height: 3vw;
+  padding: 20px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=style.css.map */
