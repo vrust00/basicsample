@@ -1,4 +1,7 @@
-
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
 .header{
    border: 1px solid lightgrey;
    &__container{
@@ -12,11 +15,26 @@
       height: 3vw;
       padding:20px;
       border-right: 1px solid lightgrey;
+
+      @media (max-width: 768px){
+         height: 10vw;
+      }
+
+      @media (max-width: 375px){
+         height: 15vw;
+      }
    }
    &__logo{
       height: 3vw;
       padding:20px;
       border-radius: 10px;
       object-fit: cover;
+
+      @media (max-width: 768px){
+         height: 10vw;
+      }
+      @media (max-width: 375px){
+         height: 15vw;
+      }
    }
 }

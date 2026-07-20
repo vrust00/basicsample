@@ -2,14 +2,14 @@
    position: relative;
    height: 80vw;
 
-
+   
    background-image: url('../images/roses-bg.png');
    background-repeat: no-repeat;
    background-position: center;
    background-size: 100vw;
    @media (max-width: 768px){
-         background-size: 150vw;
-         height: 120vw;
+         background-size: 180vw;
+         height: 158vw;
    }
 
 
@@ -20,14 +20,14 @@
       height: auto;
       object-fit: contain;
       object-position: center;
-      bottom: 0;
+      bottom: 15%;
       animation: roses-rotate-l 10s ease-in-out alternate infinite;
    }
 
    &__rose-r{
       position: absolute;
       right: 0;
-      bottom: 0;
+      bottom: 15%;
       z-index: 10;
       width: 30%;
       height: auto;
@@ -45,7 +45,7 @@
       height: 16.2vw;
       margin-top: 32.5vw;
       margin-left: 41vw;
-         
+      
       &:first-child{
          z-index: -1;
          margin-top: 39.5vw;
@@ -62,25 +62,31 @@
       }
 
       @media (max-width: 768px){
-         margin-top: 49.5vw;
-         width: 24vw;
-         height: 24vw;
-         margin-left: 36vw;
+         margin-top: 64vw;
+         width: 31vw;
+         height: 31vw;
+         margin-left: 32vw;
+
          &:first-child{
-         
-            margin-top: 59.9vw;
-            margin-left: 14vw;
+            width: 31vw;
+            height: 31vw;
+            margin-top: 78.1vw;
+            margin-left: 6.5vw;
             transform: rotate(-20.5deg);
 
          }
          &:last-child{
-            
-            margin-top: 60vw;
+            width: 31vw;
+            height: 31vw;
+            margin-top: 79vw;
             margin-left: 58vw;
             transform: rotate(20.5deg);
             
          }
       }
+
+
+      
    }
 
 
