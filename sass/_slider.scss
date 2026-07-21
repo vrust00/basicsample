@@ -17,7 +17,7 @@
       height: 200%;
     }
 
-    @media (max-width: 375px) {
+    @media (max-width: 450px) {
       height: 300%;
     }
   }
@@ -43,7 +43,7 @@
       gap: 5%;
     }
 
-    @media (max-width: 375px) {
+    @media (max-width:450px) {
       width: 300%;
       height: 205%;
     }
@@ -102,7 +102,7 @@
       bottom: -50%;      
     }
 
-    @media (max-width: 375px) {
+    @media (max-width: 450px) {
       bottom: -175%; 
       width: 40vw;
     }
@@ -140,7 +140,7 @@
       font-size: 5vw;          // стрелки адаптируются
     }
 
-    @media (max-width: 375px) {
+    @media (max-width: 450px) {
       width: 15vw;
       height: 15vw;
       font-size: 10vw;          // стрелки адаптируются

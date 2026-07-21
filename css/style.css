@@ -426,7 +426,7 @@ html, body {
     height: 200%;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .slider__bg {
     height: 300%;
   }
@@ -453,7 +453,7 @@ html, body {
     gap: 5%;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .slider__wrapper {
     width: 300%;
     height: 205%;
@@ -505,7 +505,7 @@ html, body {
     bottom: -50%;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .slider__btn-wrapper {
     bottom: -175%;
     width: 40vw;
@@ -541,7 +541,7 @@ html, body {
     font-size: 5vw;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .slider__btn {
     width: 15vw;
     height: 15vw;
