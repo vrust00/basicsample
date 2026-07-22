@@ -492,7 +492,7 @@ html, body {
 }
 @media (max-width: 450px) {
   .slider__slide-img {
-    height: 58%;
+    height: 60%;
   }
 }
 .slider__btn-wrapper {
