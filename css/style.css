@@ -288,6 +288,13 @@ html, body {
     height: 158vw;
   }
 }
+.roses__title {
+  font-family: "FFGoodPro";
+  font-weight: 100;
+  font-size: 4vw;
+  text-align: center;
+  padding-top: 4vw;
+}
 .roses__rose-l {
   position: absolute;
   z-index: 10;
@@ -372,7 +379,7 @@ html, body {
   .roses__rose-img:first-child {
     top: 93vw;
     left: 22.2vw;
-    width: 31vw;
+    width: 31.1vw;
     height: 31vw;
     transform: translate(-50%, -50%) rotate(-20.5deg);
   }
@@ -494,7 +501,7 @@ html, body {
 }
 @media (max-width: 450px) {
   .slider__slide-img {
-    height: 60%;
+    height: 61%;
   }
 }
 .slider__btn-wrapper {
@@ -566,6 +573,13 @@ html, body {
   background-repeat: no-repeat;
   background-position: top;
   background-size: 90%;
+}
+.loveis__title {
+  font-family: "FFGoodPro";
+  font-weight: 100;
+  font-size: 5vw;
+  text-align: center;
+  padding-top: 6vw;
 }
 .loveis__img {
   position: absolute;
