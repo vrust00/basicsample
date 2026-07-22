@@ -1,0 +1,69 @@
+.video-collage {
+  position: relative;
+  background-image: url('../images/video_collage.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vw;
+  height: 60vw;
+
+  @media (max-width: 450px) {
+    background-size: 250vw;
+    height: 150vw;
+  }
+
+  &__wrapper {
+    position: absolute;
+    top: 15vw;
+    gap: 10vw;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    z-index: 0;
+    margin: 0 3vw;
+    @media (max-width: 450px) {
+      flex-direction: column;
+      width: 70%;
+      left: 14vw;
+      height: 100%;
+    }
+  }
+
+  &__video {
+    position: absolute;
+    width: 90%;
+    height: 77%;
+    background-color: lightgrey;
+    top: 3%;
+    left: 5%;
+    z-index: -1;
+  }
+
+  &__sample {
+    position: relative;
+    height: 50%;
+    display: block;
+    transform: rotate(-5.5deg);
+
+    &:first-child{
+      transform: rotate(1deg);
+    }
+    &:last-child{
+      transform: rotate(5deg);
+
+    }
+    @media (max-width: 768px) {
+      height: 50%;          // высота подстраивается под содержимое
+      width: 50%;            // блок уже на 70% от родителя
+      max-width: 70%;        // ограничиваем максимальную ширину
+      margin: 0 auto;        // центрирование (если не работает через flex)
+    }
+
+  }
+
+  &__sample-img {
+    z-index: 2;
+    width: 100%;
+    height: auto;            // сохраняет пропорции изображения
+    display: block;
+  }
+}
