@@ -447,7 +447,7 @@ html, body {
   position: absolute;
   top: 20%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-17%);
   z-index: 1;
   display: flex;
   flex-direction: row;
@@ -496,6 +496,8 @@ html, body {
   background-color: lightgrey;
   z-index: -1;
   position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 768px) {
   .slider__slide-img {
