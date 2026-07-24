@@ -321,6 +321,7 @@ html, body {
   animation: roses-rotate-r 10s ease-in-out alternate infinite;
 }
 .roses__rose-img {
+  background-color: lightgray;
   position: absolute;
   top: 40.5vw;
   left: 49.5vw;
@@ -634,7 +635,7 @@ html, body {
 @media (max-width: 450px) {
   .video-collage {
     background-size: 250vw;
-    height: 150vw;
+    height: 170vw;
   }
 }
 .video-collage__wrapper {
@@ -652,7 +653,7 @@ html, body {
     flex-direction: column;
     width: 70%;
     left: 14vw;
-    height: 100%;
+    height: 90%;
   }
 }
 .video-collage__video {
@@ -689,4 +690,28 @@ html, body {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.finish {
+  background-image: url("../images/finish.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  position: relative;
+  height: 120vw;
+}
+.finish__video {
+  position: absolute;
+  background-color: lightgrey;
+  left: 32vw;
+  top: 21.7vw;
+  height: 63.4vw;
+  width: 34vw;
+  z-index: -1;
+}
+@media (max-width: 450px) {
+  .finish__video {
+    left: 30vw;
+    width: 35vw;
+  }
 }/*# sourceMappingURL=style.css.map */

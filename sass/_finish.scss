@@ -1,0 +1,23 @@
+.finish{
+   background-image: url('../images/finish.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 100vw;
+   position: relative;
+   height: 120vw;
+   &__video{
+      position: absolute;
+      background-color: lightgrey;
+      left: 32vw;
+      top:21.7vw;
+      height: 63.4vw;
+      width: 34vw;
+      z-index: -1;
+
+      @media (max-width: 450px) {
+         left: 30vw;
+         width: 35vw;
+         
+      }
+   }
+}
