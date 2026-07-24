@@ -36,6 +36,7 @@
     top: 3%;
     left: 5%;
     z-index: -1;
+    object-fit: cover;
   }
 
   &__sample {
@@ -43,7 +44,7 @@
     height: 50%;
     display: block;
     transform: rotate(-5.5deg);
-
+    
     &:first-child{
       transform: rotate(1deg);
     }
