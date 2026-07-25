@@ -8,16 +8,16 @@
    &__video{
       position: absolute;
       background-color: lightgrey;
-      left: 32vw;
+      left: 32%;
       top:21.7vw;
       height: 63.4vw;
       width: 34vw;
       z-index: -1;
       object-fit: cover;
-      @media (max-width: 450px) {
-         left: 31vw;
-         width: 35vw;
+      // @media (max-width: 450px) {
+      //    left: 32%;
+      //    width: 35vw;
          
-      }
+      // }
    }
 }

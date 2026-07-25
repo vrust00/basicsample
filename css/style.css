@@ -723,17 +723,11 @@ html, body {
 .finish__video {
   position: absolute;
   background-color: lightgrey;
-  left: 32vw;
+  left: 32%;
   top: 21.7vw;
   height: 63.4vw;
   width: 34vw;
   z-index: -1;
   -o-object-fit: cover;
      object-fit: cover;
-}
-@media (max-width: 450px) {
-  .finish__video {
-    left: 31vw;
-    width: 35vw;
-  }
 }/*# sourceMappingURL=style.css.map */
