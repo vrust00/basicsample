@@ -1,0 +1,21 @@
+.finish{
+   background-image: url('../images/finish.webp');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 100vw;
+   position: relative;
+   height: 120vw;
+   &__video{
+      position: absolute;
+      background-color: lightgrey;
+      left: 33%;
+      top:21.7vw;
+      height: 63.4vw;
+      width: 34vw;
+      z-index: -1;
+
+
+      object-fit: cover;
+      
+   }
+}
