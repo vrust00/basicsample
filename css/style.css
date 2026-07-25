@@ -141,7 +141,7 @@ html, body {
   background-position: top;
   background-size: cover;
   background-attachment: fixed;
-  background-image: url("../images/background_main.png");
+  background-image: url("../images/background_main.webp");
   padding-top: 10vw;
   padding-bottom: 15vw;
   border-bottom: 1px solid lightgrey;
@@ -291,7 +291,7 @@ html, body {
 .roses {
   position: relative;
   height: 80vw;
-  background-image: url("../images/roses-bg.png");
+  background-image: url("../images/roses-bg.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100vw;
@@ -644,7 +644,7 @@ html, body {
 }
 .video-collage {
   position: relative;
-  background-image: url("../images/video_collage.png");
+  background-image: url("../images/video_collage.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100vw;
@@ -713,7 +713,7 @@ html, body {
 }
 
 .finish {
-  background-image: url("../images/finish.png");
+  background-image: url("../images/finish.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100vw;
