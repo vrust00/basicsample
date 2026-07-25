@@ -2,54 +2,51 @@
   position: relative;
   width: 100%;
   height: 60vw;
+
   @media (max-width: 768px) {
-      height: 100vw;
+    height: 100vw;
   }
-
-
-
 
   &__bg {
     position: absolute;
     inset: 0;
     width: 100vw;
     height: 60vw;
-    object-fit: cover;          // обрезает края, центр всегда виден
+    object-fit: cover;
     object-position: center;
     z-index: -1;
 
-   @media (max-width: 768px) {
+    @media (max-width: 768px) {
       height: 100vw;
     }
-
-   
   }
 
   &__wrapper {
     position: absolute;
-    top: 20%;                   // процент от высоты слайдера, а не vw
-    left: 50%;
-    transform: translateX(-17%);
+    top: 20%;
+    left: 15%;
+    transform: translateX(-38%);
     z-index: 1;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    width: 70%;
-    height: 60%;                // процент от высоты слайдера
+    justify-content: flex-start;
+    width: fit-content;
+    height: 60%;
     gap: 5%;
 
     @media (max-width: 768px) {
       flex-direction: row;
       top: 25vw;
-      width: 100%;
+      width: fit-content;
       height: 70%;
-      gap: 5%;
+      
     }
 
-    @media (max-width:450px) {
+    @media (max-width: 450px) {
       top: 12vw;
-      width: 170%;
-      height: 69%;
+      width: 170vw;
+      height: 85%;
+      transform: translateX(-60%);
     }
   }
 
@@ -58,15 +55,15 @@
     display: flex;
     align-items: start;
     overflow: hidden;
-    
 
     &.hide {
       opacity: 0 !important;
       pointer-events: none;
+
+      
     }
 
-    
-
+ 
   }
 
   &__slide-sample-img {
@@ -77,7 +74,7 @@
 
   &__slide-img {
     width: 88%;
-    height: 57%;               
+    height: 57%;
     display: block;
     margin-left: -94%;
     margin-top: 7%;
@@ -85,36 +82,35 @@
     z-index: -1;
     position: relative;
     object-fit: cover;
-   @media (max-width: 768px) {
-      height: 35%;  
-     }
+
+    @media (max-width: 768px) {
+      height: 35%;
+    }
+
     @media (max-width: 450px) {
-      height: 61%;  
-     }
-  
+      height: 50%;         // подстройте под свои фото
+    }
   }
 
   &__btn-wrapper {
     position: absolute;
     left: 50%;
-    bottom: 20%;   
+    bottom: 20%;
     transform: translateX(-50%);
     display: flex;
     justify-content: space-between;
-    width: 20vw;                // можно оставить vw или тоже перевести в %
+    width: 20vw;
     z-index: 2;
 
     @media (max-width: 768px) {
       width: 30vw;
-      bottom: 20%;      
+      bottom: 20%;
     }
 
     @media (max-width: 450px) {
-      bottom: 14%; 
+      bottom: 14%;
       width: 40vw;
     }
-
-    
   }
 
   &__btn {
@@ -144,13 +140,13 @@
     @media (max-width: 768px) {
       width: 8vw;
       height: 8vw;
-      font-size: 5vw;          // стрелки адаптируются
+      font-size: 5vw;
     }
 
     @media (max-width: 450px) {
       width: 15vw;
       height: 15vw;
-      font-size: 10vw;          // стрелки адаптируются
+      font-size: 10vw;
     }
   }
 }

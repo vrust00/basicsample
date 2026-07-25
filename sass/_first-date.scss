@@ -4,7 +4,7 @@
    font-weight: 200;
    text-align: center;
    padding-bottom: 4vw;
-
+   
    &__sample {
       z-index: 1;
       width: 70%; 
@@ -18,7 +18,7 @@
    }
 
    &__wrapper{
-      position: absolute;
+      
       
    }
    &__img{
@@ -28,33 +28,58 @@
       
       
       &:first-child{
+         position: absolute;
          z-index: -1;
-         margin-top: 11.6vw;
-         margin-left: 2vw;
+         top: 18.8vw;
+         left: 14.6vw;
          width: 34.5vw;
          height: 30vw;
          transform: rotate(-8deg);
+         
          clip-path: polygon(
-            0% 0%,      
-            70% 0%,    
-            85% 4.5%,    
-            95% 14%,    
-            100% 35%,   
-            95% 52%,   
-            85% 67%,   
-            70% 83%,   
-            64% 100%,
-            0% 100%    
+         0% 0%,
+         70% 0%,
+         85% 4.8%,
+         93% 12%,
+         98.7% 23%,
+         98% 38%,      /* первая добавленная точка */
+         97% 41%,      /* вторая д  обавленная точка */
+         94% 51%,
+         85% 64%,
+         70% 81%,
+         64% 100%,
+         0% 100%
          );
-
+         @media (max-width: 768px){
+            top: 21vw;
+            width: 35%;
+            clip-path: polygon(
+            0% 0%,
+            70% 0%,
+            85% 4.8%,
+            93% 12%,
+            98.7% 26%,
+            98% 38%,      /* первая добавленная точка */
+            97% 38%,      /* вторая д  обавленная точка */
+            94% 49%,
+            85% 63%,
+            70% 81%,
+            64% 100%,
+            0% 100%
+            );
+         }
+         @media (max-width: 375px){
+            width: 35%;
+            top: 20vw;
+         }
          
       }
       &:last-child{
          z-index: -2;
-         
+         position: absolute;
          margin-top: 4vw; 
-         margin-left: 26vw;
-         width: 40.9vw;
+         margin-left: -42%;
+         width: 40vw;
          height: 38.5vw;
 
          @media (max-width: 375px){
