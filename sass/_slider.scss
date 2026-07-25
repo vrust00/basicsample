@@ -1,0 +1,152 @@
+.slider {
+  position: relative;
+  width: 100%;
+  height: 60vw;
+
+  @media (max-width: 768px) {
+    height: 100vw;
+  }
+
+  &__bg {
+    position: absolute;
+    inset: 0;
+    width: 100vw;
+    height: 60vw;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+
+    @media (max-width: 768px) {
+      height: 100vw;
+    }
+  }
+
+  &__wrapper {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    transform: translateX(-38%);
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: fit-content;
+    height: 60%;
+    gap: 5%;
+
+    @media (max-width: 768px) {
+      flex-direction: row;
+      top: 25vw;
+      width: fit-content;
+      height: 70%;
+      
+    }
+
+    @media (max-width: 450px) {
+      top: 12vw;
+      width: 170vw;
+      height: 85%;
+      transform: translateX(-60%);
+    }
+  }
+
+  &__slide {
+    flex: 0 0 28%;
+    display: flex;
+    align-items: start;
+    overflow: hidden;
+
+    &.hide {
+      opacity: 0 !important;
+      pointer-events: none;
+
+      
+    }
+
+ 
+  }
+
+  &__slide-sample-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  &__slide-img {
+    width: 88%;
+    height: 57%;
+    display: block;
+    margin-left: -94%;
+    margin-top: 7%;
+    background-color: lightgrey;
+    z-index: -1;
+    position: relative;
+    object-fit: cover;
+
+    @media (max-width: 768px) {
+      height: 35%;
+    }
+
+    @media (max-width: 450px) {
+      height: 50%;         // подстройте под свои фото
+    }
+  }
+
+  &__btn-wrapper {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+    z-index: 2;
+
+    @media (max-width: 768px) {
+      width: 30vw;
+      bottom: 20%;
+    }
+
+    @media (max-width: 450px) {
+      bottom: 14%;
+      width: 40vw;
+    }
+  }
+
+  &__btn {
+    font-family: 'FFGoodPro', sans-serif;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &:hover {
+      background: rgba(0,0,0,0.8);
+    }
+    &:disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    @media (max-width: 768px) {
+      width: 8vw;
+      height: 8vw;
+      font-size: 5vw;
+    }
+
+    @media (max-width: 450px) {
+      width: 15vw;
+      height: 15vw;
+      font-size: 10vw;
+    }
+  }
+}
