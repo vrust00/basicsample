@@ -7,21 +7,21 @@
    background-image: url('../images/loveis-bg.png');
    background-repeat: no-repeat;
    background-position: top;
-   background-size: 90%;
+   background-size: 100%;
    &__title{
       font-family: 'FFGoodPro';
       font-weight: 100;
       font-size: 5vw;
       text-align: center;
-      padding-top: 6vw;
+      padding-top: 5.5vw;
    }
    // Изображение (иконка, декоративный элемент)
    &__video {
       position: absolute;
       top:37%;
-      left:55%;
+      left:59%;
       background-color: lightgrey;
-      width: 32%;                // подберите размер под дизайн
+      width: 28%;                // подберите размер под дизайн
       height: 33%;
       object-fit: cover;
       z-index: -1;                // поверх фона и затемнения
@@ -38,15 +38,15 @@
    
    
    &:first-of-type {
-      top: 72%;
-      left: 37%;
+      top: 80%;
+      left: 36%;
       width: 3.5%;
       height: auto;
       animation: spin 2s linear infinite;
    }
    &:last-of-type {
-      top: 69.1%;
-      left: 41.6%;
+      top: 77%;
+      left: 41%;
       width: 4%;
       height: auto;
       animation: spin 2s linear infinite;

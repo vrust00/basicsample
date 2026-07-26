@@ -4,11 +4,13 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100vw;
-  height: 60vw;
+  height: 49.8vw;
 
+
+  
   @media (max-width: 450px) {
     background-size: 250vw;
-    height: 170vw;
+    height: 125vw;
   }
 
   
@@ -23,10 +25,11 @@
     z-index: 0;
     margin: 0 3vw;
     @media (max-width: 450px) {
+      top: 25vw;
       flex-direction: column;
-      width: 70%;
-      left: 14vw;
-      height: 90%;
+      width: 55%;
+      left: 18vw;
+      height: 60%;
     }
   }
 

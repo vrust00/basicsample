@@ -4,18 +4,15 @@
    font-weight: 200;
    text-align: center;
    padding-bottom: 4vw;
+   background-image: url('../images/first-date.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 100vw;
    
-   &__sample {
-      z-index: 1;
-      width: 70%; 
-      margin-left: 12.5vw;     
-      display: flex;   
-   }
+   height: 45vw;
+  
 
-   &__sample-img{
-      width: 100%;   
-      
-   }
+
 
 
    &__img{
@@ -27,9 +24,9 @@
       &:first-child{
          position: absolute;
          z-index: -1;
-         top: 18.8vw;
-         left: 14.6vw;
-         width: 34.5vw;
+         top: 12.3vw;
+         left: 14.5%;
+         width: 35.3%;
          height: 30vw;
          transform: rotate(-8deg);
          
@@ -48,8 +45,9 @@
          0% 100%
          );
          @media (max-width: 768px){
-            top: 21vw;
-            width: 35%;
+            left: 13.5%;
+            top: 25%;
+            width: 36.2%;
             clip-path: polygon(
             0% 0%,
             70% 0%,
@@ -66,8 +64,8 @@
             );
          }
          @media (max-width: 375px){
-            width: 35%;
-            top: 20vw;
+            width: 36.4%;
+            top: 13.5;
          }
          
       }
@@ -75,38 +73,19 @@
          z-index: -2;
          position: absolute;
          margin-top: 4vw; 
-         margin-left: -42%;
+         margin-left: -10%;
          width: 40vw;
-         height: 38.5vw;
+         height: 38.7vw;
 
          @media (max-width: 375px){
-            width: 39vw;
+            width: 42%;
          }
       }
       
    }
 
 
-   &__title{
-      font-size: 4vw;
-      margin-left: auto;
-      margin-top: 5vw;
-      margin-bottom: 3vw;
-      @media (max-width: 768px){
-         font-size: 6vw;
-      }
-   }
-   &__subtitle{
-      z-index: 2;
-      font-size: 3vw;
-      margin-top: 3vw;
-      margin-left: auto;
-      margin-bottom: 5vw;
-      @media (max-width: 768px){
-         font-size: 5vw;
-      }
-      
-   }
+   
    &__hearts-container{
       position: absolute;
       z-index: 1;
