@@ -446,7 +446,7 @@ html, body {
     top: 12vw;
     width: 170vw;
     height: 85%;
-    transform: translateX(-56.5%);
+    transform: translateX(-56.6%);
   }
 }
 .slider__slide {
@@ -488,6 +488,8 @@ html, body {
 }
 @media (max-width: 450px) {
   .slider__slide-img {
+    margin-left: -70%;
+    width: 65%;
     height: 46%;
     margin-top: 5%;
   }

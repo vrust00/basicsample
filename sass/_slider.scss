@@ -35,7 +35,7 @@
       top: 12vw;
       width: 170vw;
       height: 85%;
-      transform: translateX(-56.5%);
+      transform: translateX(-56.6%);
       
     }
   }
@@ -79,6 +79,8 @@
     }
 
     @media (max-width: 450px) {
+      margin-left: -70%;
+      width: 65%;
       height: 46%;       
       margin-top: 5%;
     }
